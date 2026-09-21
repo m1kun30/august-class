@@ -1,0 +1,17 @@
+four new flex box properties 
+make the belgium flag
+try to do ghana flag
+
+study the form page and create your own
+use css in your about page
+go through every thing through our last four classes
+
+try to make the form make it intresting 
+
+lesson 1 2 3 7
+function in javascript
+
+installv node js 
+learn about functions in javascript
+
+make color swichter

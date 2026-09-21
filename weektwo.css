@@ -1,0 +1,11 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 700;
+    background-color: black;
+    color: aquamarine;
+    height: 300px;
+    width: 300px;
+    position: static;
+    accent-color: calc(red);
+}
