@@ -1,3 +1,3 @@
-   function changeColour( ) {
-            document.getElementById("welcome").onclick.style.color = color;
- }
+function changeColour( ) {
+   document.getElementById("welcome").onclick.style.color = color;
+}
