@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script.js"></script>
 </head>
+
 <body>
     <h1>Form Page</h1>
     <div>
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" for="fname" name="first name" placeholder="First Name" required>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" for="fname" name="first name" placeholder="First Name" required>
     </div>
     <br>
     <div>
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" for="lname" name="last name" placeholder="Last Name" required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" for="lname" name="last name" placeholder="Last Name" required>
     </div>
     <br>
     <div>
-    <label for="password">Password</label>
-    <input type="password" id="password" for="password" name="password" placeholder="password" maxlength="13" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" for="password" name="password" placeholder="password" maxlength="25"
+            required>
     </div>
     <br>
-     <div>
-    <label for="age">Age</label>
-    <input type="age" id="age" for="age" name="age" placeholder="age"  required>
+    <div>
+        <label for="age">Age</label>
+        <input type="age" id="age" for="age" name="age" placeholder="age" required>
     </div>
     <br>
-     <div>
-    <label for="Email">Email</label>
-    <input type="text" id="text" for="text" name="text" placeholder="Email" required>
+    <div>
+        <label for="Email">Email</label>
+        <input type="text" id="text" for="text" name="text" placeholder="Email" required>
     </div>
     <br>
-     <div>
-    <label for="bday">Birthday</label>
-    <input type="date" id="date" for="date" name="date" placeholder="Birthday" required>
+    <div>
+        <label for="bday">Birthday</label>
+        <input type="date" id="date" for="date" name="date" placeholder="Birthday" required>
     </div>
     <br>
     <button type="reset">reset</button>
-    <button type="submit"  onclick='happy()'>submit</button>
+    <button type="submit" onclick='happy()'>submit</button>
 
     <h1 id="welcome">Welcome user</h1>
     <script>
-        function happy() {
-            alert(`My name is ${fname.value} ${lname.value} i am ${age.value} my password is ${password.value}`)
-            document.getElementById('welcome').innerHTML = `welcome, ${fname.value}  ${lname.value}`
-        }
         let fname = document.getElementById('fname')
         let lname = document.getElementById('lname')
         let password = document.getElementById('password')
@@ -55,11 +54,22 @@
         let bday = document.getElementById('date')
         let reset = document.getElementById('reset')
         let submit = document.getElementById('submit')
+
+        function happy() {
+            if (password. value. length > 7) {
+
+                alert(`My name is ${fname.value} ${lname.value} i am ${age.value} my password is ${password.value}`)
+                document.getElementById('welcome').innerHTML = `welcome, ${fname.value}  ${lname.value}`
+            }else{
+                alert('your password must be atleast 8 characters long or more.')
+            }
+        }
     </script>
 
-    <button class="green" onclick="changeColor">green</button>
-    <button class="red" onclick="changeColor">red</button>
-    <button class="blue"onclick="changeColor">blue</button>
 
-</body>
-</html>
+            <button class="green" onclick="changeColor">green</button>
+            <button class="red" onclick="changeColor">red</button>
+            <button class="blue" onclick="changeColor">blue</button>
+
+        </body>
+</html >

@@ -15,3 +15,7 @@ installv node js
 learn about functions in javascript
 
 make color swichter
+
+improve our password checker 
+make another input box called comfirm password
+make sure that pass and corm are the same if they are not pur an alert.
