@@ -19,3 +19,7 @@ make color swichter
 improve our password checker 
 make another input box called comfirm password
 make sure that pass and corm are the same if they are not pur an alert.
+
+make a codintional if someone does not put in their name do not allow them to submit
+study function again
+learn about while loop

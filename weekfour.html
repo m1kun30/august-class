@@ -8,62 +8,70 @@
     <script src="./script.js"></script>
 </head>
 
-<body>
-    <h1>Form Page</h1>
-    <div>
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" for="fname" name="first name" placeholder="First Name" required>
-    </div>
-    <br>
-    <div>
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" for="lname" name="last name" placeholder="Last Name" required>
-    </div>
-    <br>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" for="password" name="password" placeholder="password" maxlength="25"
-            required>
-    </div>
-    <br>
-    <div>
-        <label for="age">Age</label>
-        <input type="age" id="age" for="age" name="age" placeholder="age" required>
-    </div>
-    <br>
-    <div>
-        <label for="Email">Email</label>
-        <input type="text" id="text" for="text" name="text" placeholder="Email" required>
-    </div>
-    <br>
-    <div>
-        <label for="bday">Birthday</label>
-        <input type="date" id="date" for="date" name="date" placeholder="Birthday" required>
-    </div>
-    <br>
-    <button type="reset">reset</button>
-    <button type="submit" onclick='happy()'>submit</button>
+    <body>
+        <h1>Form Page</h1>
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" for="fname" name="first name" placeholder="First Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" for="lname" name="last name" placeholder="Last Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" for="password" name="password" placeholder="password" maxlength="25"
+                required>
+        </div>
+        <br>
+        <div>
+            <label for="comfirm">Comfirm assword</label>
+            <input type="password" id="comfirm" for="comfirm" name="comfirm" placeholder="comfirm password" maxlength="25"
+                required>
+        </div>
+        <br>
+        <div>
+            <label for="age">Age</label>
+            <input type="age" id="age" for="age" name="age" placeholder="age" required>
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email</label>
+            <input type="text" id="text" for="text" name="text" placeholder="Email" required>
+        </div>
+        <br>
+        <div>
+            <label for="bday">Birthday</label>
+            <input type="date" id="date" for="date" name="date" placeholder="Birthday" required>
+        </div>
+        <br>
+        <button type="reset">reset</button>
+        <button type="submit" onclick='happy()'>submit</button>
 
-    <h1 id="welcome">Welcome user</h1>
-    <script>
-        let fname = document.getElementById('fname')
-        let lname = document.getElementById('lname')
-        let password = document.getElementById('password')
-        let age = document.getElementById('age')
-        let email = document.getElementById('text')
-        let bday = document.getElementById('date')
-        let reset = document.getElementById('reset')
-        let submit = document.getElementById('submit')
+        <h1 id="welcome">Welcome user</h1>
+        <script>
+            let fname = document.getElementById('fname')
+            let lname = document.getElementById('lname')
+            let password = document.getElementById('password')
+            let age = document.getElementById('age')
+            let email = document.getElementById('text')
+            let bday = document.getElementById('date')
+            let reset = document.getElementById('reset')
+            let submit = document.getElementById('submit')
+            let comfirm = document.getElementById('comfirm')
 
-        function happy() {
-            if (password. value. length > 7) {
-
-                alert(`My name is ${fname.value} ${lname.value} i am ${age.value} my password is ${password.value}`)
-                document.getElementById('welcome').innerHTML = `welcome, ${fname.value}  ${lname.value}`
-            }else{
-                alert('your password must be atleast 8 characters long or more.')
+            function happy() {
+                if (password.value.length < 8) {
+                    alert('your password must be atleast 8 characters long')
+                }else if (password.value !== comfirm.value){
+                    alert('both password do not match')
+                }else{
+                    alert(`My name is ${fname.value} ${lname.value} i am ${age.value} my password is ${password.value}`)
+                        document.getElementById('welcome').innerHTML = `welcome, ${fname.value}  ${lname.value}`
+                }
             }
-        }
     </script>
 
 
