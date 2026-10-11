@@ -63,6 +63,15 @@
             let comfirm = document.getElementById('comfirm')
 
             function happy() {
+
+                if(fname.value.length <= 1){
+                    alert('your name must be atleast more than 1 character long')
+                }else{
+                    alert(`My name is ${fname.value} ${lname.value} i am ${age.value} my password is ${password.value}`)
+                        document.getElementById('welcome').innerHTML = `welcome, ${fname.value}  ${lname.value}`
+                }
+
+
                 if (password.value.length < 8) {
                     alert('your password must be atleast 8 characters long')
                 }else if (password.value !== comfirm.value){
